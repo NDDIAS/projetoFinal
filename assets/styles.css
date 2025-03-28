@@ -1,0 +1,180 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(/assets/images/planeta.jpeg) repeat center center fixed;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+nav{
+    margin: 30px;
+}
+
+/* .display {
+    font-family: 'Segoe UI', sans-serif
+} */
+
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    font-display: block;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgb(204, 204, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+#inscricao:hover {
+    background-color:rgb(255, 255, 0);
+    color:rgb(0, 0, 0);
+    border-radius: 25px;
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-left: 80px;
+}
+
+iframe {
+    width: 80%;
+    height: 80%;
+}
+
+.fundo p{
+    color: white;
+    margin-top: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: static;
+}
+
+.participantes {
+    border-radius: 24px;
+    background-color: white;
+}
+
+thead {
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 10px;
+}
+
+.container-flex {
+    width: 100%;
+}
+
+html {
+    width: 100%;
+}
+
+
+
+/* ====== Media Queries ====== */
+
+@media screen and (max-width:590px) {
+
+    h1,
+    h3{
+        font-size: large;
+        text-align: center;
+        /* margin: auto; */
+    }
+
+    .nav-link {
+        font-size: medium;
+        text-align: center;
+    }
+
+
+    #formulario{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .agenda {
+        justify-content: center;
+        text-align: center;
+        font-size:x-small;
+    }
+
+    .iframe-container{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .localizacao {
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .participantes {
+        /* border-radius: 15px; */
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+        object-fit: cover;
+    }
+
+    .fundo {
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: auto;
+        position: static;
+    }
+
+    .ttIndex{
+        font-size: xx-large;   
+        margin-top: 25%;
+    }
+
+    .agradecimentos{
+       margin-right: 7%;
+    }
+    /* smartphones, iPhone, portrait 480x320 phones */
+
+}
+
+@media screen and (min-width:591px) {
+    .agenda{
+        justify-content: center;
+    }
+
+    .participantes {
+        border-radius: 24px;
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+        object-fit: cover;
+        text-size-adjust: auto;
+    }
+
+    .agradecimentos{
+        margin-right: 10%;
+     }
+
+
+     .formulario{
+        display: flexbox;
+     }
+
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
